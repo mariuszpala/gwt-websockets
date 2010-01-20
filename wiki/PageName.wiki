@@ -1,0 +1,9 @@
+#summary Intro
+
+= Introduction =
+
+The purpose of this project is to offer a simple binding from GWT down to the upcomming html 5 WebSockets standard, well, one it is a standard :)
+
+
+= Details =
+
