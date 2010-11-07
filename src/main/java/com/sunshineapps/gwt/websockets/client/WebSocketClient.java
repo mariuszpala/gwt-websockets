@@ -53,12 +53,12 @@ public class WebSocketClient {
 
     public native void connect(String server) /*-{
         var that = this;
-        if (!window.WebSocket) {
+        if (!$wnd.WebSocket) {
             alert("WebSocket connections not supported by this browser");
             return;
         }
         console.log("WebSocket connecting to "+server);
-        that._ws=new WebSocket(server);
+        that._ws=new $wnd.WebSocket(server);
         console.log("WebSocket connected "+that._ws.readyState);
 
         that._ws.onopen = function() {
